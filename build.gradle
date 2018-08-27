@@ -1,0 +1,12 @@
+plugins {
+  id 'net.researchgate.release' version '2.6.0'
+}
+
+description = "statRant is nor devRant-stats"
+version = "1.0"
+
+task build(type: Zip, group: "Archive", description: "Builds a .pyz file and stores it in the build folder") {
+    from "src"
+    setArchiveName "build/statRant"
+		println "Don't forget to publish the built file to github"
+}
